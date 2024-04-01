@@ -1,15 +1,10 @@
-#include <stdio.h >  
-  
-int main()  
-{  
-    int n;  
-  
-    printf("Enter an integer number\n");  
-    scanf("%d", &n);  
-  
-    (n % 2 == 0) ?  
-    (printf("%d is Even number\n", n)) :  
-    (printf("%d is Odd  number\n", n));  
-  
-    return 0;  
-}  
+#include <stdio.h>
+
+void main() {
+float side, perimeter, area;
+ printf("Enter the length of the side of the square:\n");
+  scanf("%f", & side); perimeter = 4 * side;
+  printf("Perimeter of the Square : %0.4f\n", perimeter);
+area = side * side;
+  printf("Area of the square : %0.4f\n", area);
+}

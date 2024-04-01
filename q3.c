@@ -1,20 +1,12 @@
-#include <stdio.h>
-int main() {
-   int year;
-   printf("Enter a year: ");
-   scanf("%d", &year);
-   if (year % 400 == 0) {
-      printf("%d is a leap year.", year);
-   }
-   else if (year % 100 == 0) {
-      printf("%d is not a leap year.", year);
-   }
-   else if (year % 4 == 0) {
-      printf("%d is a leap year.", year);
-   }   
-   else {
-      printf("%d is not a leap year.", year);
-   }
-
-   return 0;
-}
+#include <stdio.h>  
+#define PI 3.14159  
+int main() {  
+    double radius, area, circumference;  
+printf("Enter the radius of the circle: ");  
+scanf("%lf", &radius);  
+    area = PI * radius * radius;  
+    circumference = 2 * PI * radius;  
+printf("Area of the circle: %.2lf\n", area);  
+printf("Circumference of the circle: %.2lf\n", circumference);  
+    return 0;  
+}  
