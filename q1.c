@@ -1,19 +1,15 @@
 #include<stdio.h>
-#include <stdio.h>
+int main(){
+int num1, num2;
+ printf("Input the values for Number1 : ");
+    scanf("%d", num1);
+ printf("Input the values for Number2 : ");
+ scanf("%d", num2);
 
-int main()  
-{
-    // Print Name
-    printf("Name   : mansi patel\n"); 
-    
-    // Print Date of Birth
-    printf("DOB    : august 16 2004\n"); 
-    
-    // Print age
-    printf("Mobile : 20\n"); 
-    
-    // Indicate successful execution
-    return(0); 
-}
+    if (num1 == num2)
 
-
+        printf("Number1 and Number2 are equal\n");
+    else
+       printf("Number1 and Number2 are not equal\n");
+return(0);
+ }

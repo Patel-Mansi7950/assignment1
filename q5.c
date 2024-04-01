@@ -1,11 +1,18 @@
-// C Program to Find Surface Area of a Cube
 #include <stdio.h>
-int main(){
-    int side;
-    float area;
-    printf("Enter the side of the cube: ");
-    scanf("%d", &side);
-    area = 6 * side * side;
-    printf("Surface Area of Cube: %.2f", area);
+
+int main() {
+
+    double num;
+    printf("Enter a number: ");
+    scanf("%lf", &num);
+    if (num <= 0.0) {
+        if (num == 0.0)
+            printf("You entered 0.");
+        else
+            printf("You entered a negative number.");
+    } 
+    else
+        printf("You entered a positive number.");
+
     return 0;
 }

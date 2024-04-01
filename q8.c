@@ -1,15 +1,15 @@
-#include <stdio.h>     // Include the standard input/output header file.
-int main() {
-    float rec_width;        
-    float rec_height;        
-    float rec_perimeter;     
-    printf("Input the height of the Rectangle : ");
-    scanf("%f", &rec_height);
-    printf("Input the width of the Rectangle : ");
-    scanf("%f", &rec_width);
-    rec_perimeter = 2.0 * (rec_height + rec_width);
-    printf("Perimeter of the Rectangle is : %f\n", rec_perimeter);
+#include <stdio.h>
 
-    return 0;  
-}
-
+void main() {
+  float ht;
+  printf("Enter  the Height (in centimeters)\n");
+  scanf("%f", & ht);
+  if (ht < 150)
+    printf("This person is Short\n");
+  else if ((ht >= 150) && (ht <= 165.0))
+    printf("This person is Average Height\n");
+  else if ((ht >= 165.0) && (ht <= 195.0))
+    printf("This person is Tall\n");
+  else
+    printf("This person is of Abnormal height\n");
+} 
