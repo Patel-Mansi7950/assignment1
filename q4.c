@@ -1,26 +1,31 @@
 #include <stdio.h>
-#include <string.h>
- 
-int main()
-{
-    char s[1000];  
-    int i,words=0;
- 
-    printf("Enter  the string : ");
-    gets(s);
-     
-    for(i=0;s[i];i++)  
-    {
-    	if(s[i]==32)
-    	 words++;
- 
- 	}
- 	if(i>0)
- 	 words++;
- 	 
- 	
-     
-    printf("no of words in string = %d\n",words);
-    return 0;
-}
 
+int main() {
+
+  char op;
+  double first, second;
+  printf("Enter an operator (+, -, *, /): ");
+  scanf("%c", &op);
+  printf("Enter two operands: ");
+  scanf("%lf %lf", &first, &second);
+
+  switch (op) {
+    case '+':
+      printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
+      break;
+    case '-':
+      printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
+      break;
+    case '*':
+      printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
+      break;
+    case '/':
+      printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
+      break;
+      
+    default:
+      printf("Error! operator is not correct");
+  }
+
+  return 0;
+}
