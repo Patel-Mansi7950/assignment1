@@ -1,19 +1,14 @@
-#include <stdio.h>   
-void main()
-{
-    int tmp;   
-    printf("Input days temperature : ");   
-    scanf("%d", &tmp);  
-    if (tmp < 0)   
-        printf("Freezing weather.\n");  
-    else if (tmp < 10)   
-        printf("Very cold weather.\n");   
-    else if (tmp < 20)   
-        printf("Cold weather.\n");   
-    else if (tmp < 30)   
-        printf("Normal in temp.\n");   
-    else if (tmp < 40)   
-        printf("Its Hot.\n"); 
-    else   
-        printf("Its very hot.\n");
+#include <stdio.h>
+int main() {
+    int n, i, sum = 0;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; ++i) {
+        sum += i;
+    }
+
+    printf("Sum = %d", sum);
+    return 0;
 }

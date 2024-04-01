@@ -1,10 +1,22 @@
-#include <stdlib.h>
+#include <stdio.h>
+
 int main()
 {
-    int num1,num2,num3;
-    printf("Enter three numbers: ");
-    scanf("%d %d %d",&num1,&num2,&num3);
-       int result=num3<(num1<num2?num1:num2)?num3:((num1<num2)? num1:num2);
-        printf("\n The Smallest number is: %d ",result);
-    return 0;
+
+	int n, i, fact = 1;
+
+	printf("Enter the number :--> ");
+	scanf("%d", &n);
+
+	i = 1;
+
+	while(i <= n)
+	{
+        fact = fact * i;
+        i++;
+	}
+
+	printf("The factorial of %d is %d\n", n, fact);
+
+	return 0;
 }

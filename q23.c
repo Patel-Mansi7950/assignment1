@@ -1,19 +1,14 @@
- #include<stdio.h >
-
-int main()
-{
-    int a, b;
-
-    printf("Enter 2 integer numbers\n");
-    scanf("%d %d", &a, &b);
-
-    printf("You entered a = %d and b = %d\n", a, b);
-
-    a = a * b;
-    b = a / b;
-    a = a / b;
-
-    printf("After swapping a = %d and b = %d\n", a ,b);
-
-    return 0;
-}
+#include<stdio.h>
+int main(){
+    int start,end=10,sum=0;
+    for(start=1;start<=end;start++){
+        if(start!=end){
+            printf("%d+",start,start);
+        }
+        else{
+            printf("%d+",start,start);
+        }
+        sum=sum+start;
+    }
+    printf("%d",sum);
+}                

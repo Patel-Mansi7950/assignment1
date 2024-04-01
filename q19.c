@@ -1,17 +1,19 @@
-#include <stdio.h>
-#include <math.h>
-
+//patterns
+#include<stdio.h>
 int main()
 {
-    float principle, rate, time, CI;
-    printf("Enter principle (amount): ");
-    scanf("%f", &principle);
-    printf("Enter time: ");
-    scanf("%f", &time);
-    printf("Enter rate: ");
-    scanf("%f", &rate);
-    CI = principle* (pow((1 + rate / 100), time));
-    printf("Compound Interest = %f", CI);
+    int i, j, n;
+    printf("Enter number of lines of pattern: ");
+    scanf("%d", &n);
+
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d", j%2);
+        }
+        printf("\n");
+    }
 
     return 0;
 }

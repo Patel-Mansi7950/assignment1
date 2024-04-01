@@ -1,25 +1,16 @@
-#include <stdio.h>
-#include <math.h>
- 
+#include<stdio.h>
 int main()
 {
-    double Principal;
-    printf("Enter the Principal Amount: ");
-    scanf("%lf", &Principal);
- 
-    double Rate;
-    printf("Enter the Interest Rate: ");
-    scanf("%lf", &Rate);
- 
-    double Time;
-    printf("Enter the Time Period(in Years): ");
-    scanf("%lf", &Time);
-    double Amount;
-    Amount = Principal * pow((1 + Rate / 100), Time);
- 
-    double Compound_Interest;
-    Compound_Interest = Amount - Principal;
-    printf("The Compound Interest is %.2lf ",Compound_Interest);
- 
-    return 0;
+    int i,n,r,s=0;
+    printf("\n  Enter The Number:");
+    scanf("%d",&n);
+    for(i=n;i>0; )
+    {
+        r=i%10;
+        s=s*10+r;
+        i=i/10;
+    }
+     
+    printf("\n  The Reverse Number of %d is %d",n,s);
+    return(0);
 }

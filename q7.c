@@ -1,15 +1,19 @@
 #include <stdio.h>
-main()
-{
-    int s1,s2,s3;
-    printf("Enter marks of sub1,sub2,sub3");
-    scanf("%d%d%d",&s1,&s2,&s3);
-    if(s1>40 && s2>40 && s3>40)
-    {
-        printf("Pass");
-    }
-    else
-    {
-        printf("Fail");
-    }
+
+int main() {
+
+  int n, reverse = 0, remainder;
+
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+
+  while (n != 0) {
+    remainder = n % 10;
+    reverse = reverse * 10 + remainder;
+    n /= 10;
+  }
+
+  printf("Reversed number = %d", reverse);
+
+  return 0;
 }

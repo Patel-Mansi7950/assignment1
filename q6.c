@@ -1,14 +1,16 @@
-#include <stdio.h>
-int main() {
-    char c;
-    int lowercase_vowel, uppercase_vowel;
-    printf("Enter an alphabet: ");
-    scanf("%c", &c);
-    lowercase_vowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
-    uppercase_vowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
-    if (lowercase_vowel || uppercase_vowel)
-        printf("%c is a vowel.", c);
-    else
-        printf("%c is a consonant.", c);
-    return 0;
-}
+#include<stdio.h>
+int main(){
+    int num,n1=0,n2=1,temp,count;
+    printf("enter number:");
+    scanf("%d",&num);
+    printf("fibonacci series:\n");
+    printf("%d,%d,",n1,n2);
+    count=2;
+    while(count<=num){
+        temp=n1+n2;
+        n1=n2;
+        n2=temp;
+        count++;
+          printf("%d,",temp);
+    }
+}    

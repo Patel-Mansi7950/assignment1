@@ -1,14 +1,18 @@
-#include<stdio.h>
-int main() {
-  double first, second, temp;
-  printf("Enter first number: ");
-  scanf("%lf", &first);
-  printf("Enter second number: ");
-  scanf("%lf", &second);
-  temp = first;
-  first = second;
-  second = temp;
-  printf("\nAfter swapping, first number = %.2lf\n", first);
-  printf("After swapping, second number = %.2lf", second);
-  return 0;
+#include <stdio.h>
+int main(){
+   int num, temp, rem, rev = 0;
+   printf("enter a number:");
+   scanf("%d", &num);
+   temp = num;
+   while ( temp > 0){
+      rem = temp %10;
+      rev = rev *10+ rem;
+      temp = temp /10;
+   }
+   printf("reversed number is = %d", rev);
+   if ( num == rev )
+      printf("%d is Palindrome Number ", num);
+   else
+      printf("%d is not the Palindrome Number", num);
+   return 0;
 }

@@ -1,14 +1,17 @@
-//accept 5 numbers from user and find those number factorial;
-#include<stdio.h>
-int main(){
-int num,i;
-    for (i=0;i=5;i++){
-        printf("enters numbers:");
-        scanf("%d",&num);
-        int fact=1;
-        for(int j=1;j<=num;j++){
-            fact=fact*j;
+#include <stdio.h>
+int main() {
+    int n, i;
+    unsigned long long fact = 1;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    if (n < 0)
+        printf("Error! Factorial of a negative number doesn't exist.");
+    else {
+        for (i = 5; i <= n; ++i) {
+            fact *= i;
         }
-        printf("factorial of %d=%d\n",num,fact);
+        printf("Factorial of %d = %llu", n, fact);
     }
-}        
+
+    return 0;
+}
