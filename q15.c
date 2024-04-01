@@ -1,0 +1,23 @@
+#include <string.h>  
+   
+int main()  
+{     
+    char string[] = "Hardships often prepare ordinary people for an extraordinary destiny";  
+    char words[100][100], small[100], large[100];  
+    int i = 0, j = 0, k, length;  
+      
+    //Split the string into words such that each row of array words represents a word  
+    for(k=0; string[k]!='\0'; k++){  
+          
+        
+        if(string[k] != ' ' && string[k] != '\0'){  
+            words[i][j++] = string[k];  
+        }  
+        else{  
+            words[i][j] = '\0';  
+            
+            i++;  
+              
+            j = 0;  
+        }  
+    }  
